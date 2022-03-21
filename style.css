@@ -23,8 +23,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,300");
+  }
+  
+
 body {
 	line-height: 1;
+	font-family: "Open Sans", serif;
 }
 ol, ul {
 	list-style: none;
@@ -47,21 +55,141 @@ table {
     background-image: url('/images/landscape.png');
 background-size: cover;
     background-repeat: no-repeat;
-height: 1100px;
+height: 900px;
     
 }
 
 #iphone {
 
     width: 70%;
+
+
+}
+
+.iphone {
+
+	padding-top : 100px;
 }
 
 .logoh {
 
-    display: inline
+    display: inline;
+	margin-left : 50px;
 }
 
+
+
 .headertext > h1{
+	width: 100%;
 font-size: 50px;
 
+
+
+}
+.headertext > p{
+	width: 100%;
+font-size: 14px;
+line-height: 2;
+
+
+
+}
+
+.title {
+
+	margin : 10px;
+}
+
+.section2 {
+line-height: 2;
+	padding: 4% 20%;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: lighter;
+
+}
+h3 {
+	font-size: 30px;
+	font-weight: lighter;
+	margin-bottom: 30px;
+
+}
+
+h4 {
+
+	font-size: 15px;
+font-weight: bold;
+margin-bottom: 20px;;
+
+}
+
+
+#description  {
+color: white;
+	padding-left: 20%;
+}
+
+#featured_content {
+
+	padding-left: 20%;
+	padding-right: 15%;
+	margin-top : 80px; 
+}
+
+div.descriptioncontent > * {
+	height: 400px;
+	padding: 40px;
+}
+
+div.descriptioncontent > div > a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.description1 {
+	background-color: #f5989d;
+}
+.description2 {
+	background-color: #615f7d;
+}
+
+.description3 {
+	background: url('/images/Layer\ 6.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.description4 {
+	background-color: #bd8cbf;
+}
+
+
+.description5 {
+		background: url('/images/Layer\ 5.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.description6 {
+		background-color:#82ca9c;
+}
+.description7 {
+	background: url('/images/Layer\ 14.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.featured {
+
+	height: 300px;
+	width: 100%;
+}
+
+.featured > div {
+
+padding : 50px;
 }
