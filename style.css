@@ -28,6 +28,11 @@ footer, header, hgroup, menu, nav, section {
 	font-family: "Open Sans";
 	src: url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,300");
   }
+
+@font-face {
+	font-family: "Merryweather";
+	src: url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700");
+  }
   
 
 body {
@@ -53,18 +58,36 @@ table {
 .section1 {
     color: white;
     background-image: url('/images/landscape.png');
+	background-attachment: fixed;
+	background-position: center;
 background-size: cover;
     background-repeat: no-repeat;
 height: 900px;
     
 }
 
+#titlerow {
+height : 50px;
+}
+
 #iphone {
 
     min-width: 70%;
-
+	animation: myAnim 2s ease 0s 1 normal forwards;
 
 }
+
+@keyframes myAnim {
+	0% {
+	  opacity: 0;
+	  transform: translateX(250px);
+	}
+  
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
 
 .iphone {
 
@@ -75,40 +98,42 @@ height: 900px;
     border-style: none;
 }
 
-.logoh {
+#sitetitle {
 
-    display: inline;
-	margin-left : 50px;
+	font-family: 'Merriweather';
+	font-size: 20px;
 }
 
-.headertext {
-
-	padding :15%;
-}
-
-.headertext > h1{
-	width: 100%;
-font-size: 50px;
 
 
 
-}
-.headertext > p{
-font-size: 17px;
-line-height: 2;
+.logo {
+	padding-top : 30px;
+	padding-left : 20%;
 
 
 
 }
 
-.title {
+.logo > p {
 
-	margin : 10px;
+	vertical-align: middle;
+
 }
+
+
+
 
 .section2 {
 line-height: 2;
 	padding: 4% 20%;
+
+}
+
+
+
+.section2 > div > div > p   {
+color: #959595;
 }
 
 h2 {
@@ -135,6 +160,7 @@ margin-bottom: 20px;;
 #description  {
 color: white;
 	padding-left: 20%;
+	justify-content: end;
 }
 
 #featured_content {
@@ -191,9 +217,20 @@ font-weight: bold;
 
 
 
-.featured > div {
+.featured > div, .featured2 > div {
 
 padding : 50px;
+}
+
+.featured2 > div > p {
+
+	color : #959595;
+}
+
+
+.section2 > div > div > p {
+
+color : #959595;
 }
 
 #big_picture
@@ -201,7 +238,10 @@ padding : 50px;
 	width : 100%;
 height : 900px;
 	background-image: url('/images/Layer\ 8.png');
+	background-attachment: fixed;
+	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 
@@ -214,6 +254,13 @@ line-height: 30px;
 
 }
 
+.pixel > h1 {
+	font-size: 55px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+	line-height: 50px;
+}
+
 .pixel > h2 {
 	width : 60%;
 	margin-bottom: 20px;
@@ -224,26 +271,173 @@ width : 60%;
 	font-size : 16px;
 }
 
+
 #apropos {
-padding-top : 50px;
 	background-color: #82ca9c;
+	padding-left: 20%;
+	padding-right: 15%;
+	padding-top : 80px;
+	padding: 5% 15% 5%;
+	line-height: 1.7;
 }
 
+.prices {
+background-color: #f6f7fa;
+	padding : 5% 20%;
 
-
-.aproposcol {
-
-	margin: 200px;
 }
 
-.raisons {
+.prices > div > div {
 line-height: 1.7;
-	height : 400px;
-	width : 30%;
+padding: 50px 50px;
 
 }
 
-.raisons > p {
+#price2 {
+	-webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.54); 
+	box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.15);
+	background-color: white;
+}
+
+.prices > div > div > p {
+line-height: 1.7;
+padding-bottom : 30px;
+width: 90%;
+color : #93a5b3;
+font-size: 14px;
+	}
+
+	.prices > div > div > button {
+		padding: 10px 20px;
+		font-size: 11px;
+		font-weight: bolder;
+		background-color: #82ca9c;
+		color: white;
+			}
+
+
+
+.fa-brands {
+margin : 7% 1%;
+	color: #c5c5c5;
+}
+
+#legacy{
+
+width: 100px;
+	background-color: #e1e1e1;
+	border-radius: 7px;
+	margin-bottom: 8px;
+}
+
+#legacy > p, #popular > p {
+	color: white;
+font-size: 12px;
+font-weight: bold;
+	padding: 5px 15px;
+	text-align: center;
+}
+
+#popular {
+
+	width: 150px;
+		background-color: #bd8cbf;
+		border-radius: 7px;
+		margin-bottom: 5px;
+	}
+
+	.footer {
+
+		background-color: #192431;
+		
+	}
+
+	.footer > .row {
+
+	padding: 150px;
+
+	}
+
+.footer > .row > div {
+
+	padding : 0px 150px;
+}
+
+.footer > .row > div > p {
+line-height: 1.7;
+
+}
+
+.input-group {
+
+	width : 50%;
+}
+
+.emailinput {
+
+	padding : 17px;
+
+}
+
+.emailbutton {
+padding : 8px 25px;
+font-size: 30px;
+background-color: #82ca9c;
+color: white;
+}
+
+#spam {
+font-size: 12px;
+	color: #57697f;
+width : 45%
+}
+
+.footermenu > p {
+
+	padding-bottom: 100px;
+}
+
+ul > li {
+font-size: 13px;
+line-height: 1.7;
+}
+
+@media (max-width: 992px) { 
+
+	.section2 {
+		line-height: 2;
+
+		}
+
+	.footer > .row {
+
+		padding: 50px;
 	
-	margin: 20px;
+		}
+
+
+	.footer > .row > div {
+
+		padding : 0px 20px;
+	}
+
+	
+.input-group {
+
+	width : 100%;
 }
+
+#iphone {
+
+	display : none;
+}
+
+#description {
+	padding-left: 0%;
+	justify-content: center;
+
+}
+
+
+
+ }
